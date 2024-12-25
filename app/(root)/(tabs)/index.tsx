@@ -10,10 +10,15 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Link href={"/sign-in"}>SignIn</Link>
+      <Link
+        href={"/sign-in"}
+        className=" text-red-400"
+      >
+        SignIn
+      </Link>
       <Link href={"/explore"}>Explore</Link>
       <Link href={"/profile"}>Profile</Link>
-      <Link href={"/properties/[id]"}>Property</Link>
+      <Link href={"/properties/1"}>Property</Link>
     </View>
   );
 }
