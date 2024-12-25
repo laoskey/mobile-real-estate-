@@ -5,7 +5,7 @@ interface Explore {}
 function Explore() {
   return (
     <View>
-      <Text>Explore</Text>
+      <Text className="text-red-500">Explore</Text>
     </View>
   );
 }

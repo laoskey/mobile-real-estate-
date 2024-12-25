@@ -10,12 +10,10 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Link
-        href={"/sign-in"}
-        className=" text-red-400"
-      >
-        SignIn
-      </Link>
+      <Text className="mb-10 font-bold">
+        Welecome to Wanda ,achiveyour goals
+      </Text>
+      <Link href={"/sign-in"}>SignIn</Link>
       <Link href={"/explore"}>Explore</Link>
       <Link href={"/profile"}>Profile</Link>
       <Link href={"/properties/1"}>Property</Link>
