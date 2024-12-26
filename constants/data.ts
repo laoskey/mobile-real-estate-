@@ -36,6 +36,12 @@ export const cards = [
   },
 ];
 
+export const fakeUser = {
+  name: "Laoskee",
+  avatar: null,
+  login: true,
+};
+
 export const featuredCards = [
   {
     title: "Featured 1",
