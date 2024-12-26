@@ -1,5 +1,3 @@
-import icons from "@/constants/icons";
-import images from "@/constants/images";
 import {
   Image,
   ScrollView,
@@ -8,12 +6,17 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import icons from "@/constants/icons";
+import images from "@/constants/images";
+import { router } from "expo-router";
 
 interface SignIn {}
 function SignIn() {
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    router.push("/");
+  };
   return (
-    <SafeAreaView className="bg-white h-full">
+    <SafeAreaView className=" h-full bg-white">
       <ScrollView
         contentContainerStyle={{
           height: "100%",
@@ -22,7 +25,7 @@ function SignIn() {
         <Image
           source={images.onboarding}
           resizeMode="contain"
-          className="w-full h-4/6"
+          className="w-full h-3/5"
         />
         <View className="px-10 ">
           <Text className="text-base text-center uppercase font-rubic text-black-200">
