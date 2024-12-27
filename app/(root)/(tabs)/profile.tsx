@@ -82,7 +82,7 @@ function Profile() {
           <View className="flex flex-col items-center relative mt-5">
             <Image
               source={
-                user.avatar ? { uri: user?.avatar } : images.avatar
+                user.avatar ? { uri: user?.avatar } : images.avatar2
               }
               className="size-44 relative rounded-full"
             />

@@ -36,6 +36,17 @@ export const cards = [
   },
 ];
 
+export const fakeproperties = [
+  {
+    image: "D:/Code/react-native/wander/assets/images/avatar.png",
+    rating: 2.99,
+    name: "Ahamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 998852,
+    id: "1",
+  },
+];
+
 export const fakeUser = {
   name: "Laoskee",
   avatar: null,

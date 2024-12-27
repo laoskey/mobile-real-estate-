@@ -10,23 +10,20 @@ import icons from "@/constants/icons";
 import images from "@/constants/images";
 import { router } from "expo-router";
 
-interface SignIn {}
 function SignIn() {
   const handleLogin = () => {
     router.push("/");
   };
+
   return (
-    <SafeAreaView className=" h-full bg-white">
-      <ScrollView
-        contentContainerStyle={{
-          height: "100%",
-        }}
-      >
+    <SafeAreaView className="h-full bg-white">
+      <ScrollView contentContainerClassName="h-full">
         <Image
           source={images.onboarding}
           resizeMode="contain"
           className="w-full h-3/5"
         />
+
         <View className="px-10 ">
           <Text className="text-base text-center uppercase font-rubic text-black-200">
             Welecome to Wanda
