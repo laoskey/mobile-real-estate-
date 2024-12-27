@@ -10,7 +10,7 @@ import {
 } from "@/constants/data";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
-import { Link } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
 import {
   ActivityIndicator,
   FlatList,
@@ -30,6 +30,14 @@ export default function Index() {
   const loading = false;
   const latestPropertiesLoading = false;
   const handleCardPress = ({ id }: { id: string }) => {};
+
+  const params = useLocalSearchParams<{
+    query?: string;
+    filter?: string;
+  }>();
+
+  console.log({ params });
+  // TODO:IMplement the filter and serach func
 
   return (
     <SafeAreaView className="h-full bg-white">
