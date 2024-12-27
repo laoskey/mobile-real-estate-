@@ -11,6 +11,7 @@ import {
 import icons from "@/constants/icons";
 import images from "@/constants/images";
 import { Link, useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
 import {
   ActivityIndicator,
   FlatList,
@@ -29,8 +30,9 @@ export default function Index() {
 
   const loading = false;
   const latestPropertiesLoading = false;
-  const handleCardPress = ({ id }: { id: string }) => {};
+  const handleCardPress = (id: string) => {};
 
+  let showProperties = [];
   const params = useLocalSearchParams<{
     query?: string;
     filter?: string;
@@ -38,6 +40,14 @@ export default function Index() {
 
   console.log({ params });
   // TODO:IMplement the filter and serach func
+
+  useEffect(() => {
+    if (params.filter) {
+      // 1>get the filter param
+      // 2>fliter the data
+      // 3>return the data as showProperties to render
+    }
+  }, []);
 
   return (
     <SafeAreaView className="h-full bg-white">
@@ -47,7 +57,7 @@ export default function Index() {
         renderItem={({ item }) => (
           <Card
             item={item}
-            onPress={() => handleCardPress({ id: item.id })}
+            onPress={() => handleCardPress(item.id)}
           />
         )}
         keyExtractor={(item) => item.id}

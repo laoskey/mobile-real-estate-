@@ -36,6 +36,52 @@ export const cards = [
   },
 ];
 
+export const fakeProperty = {
+  name: "ForestHome",
+  image:
+    "https://www.bing.com/th/id/OIP.coDKm0m4Jpm_hF6V0xhGaQHaF7?w=215&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+
+  type: "APT",
+  rating: 5.1,
+  reviews: [{ name: "aha" }],
+  bedrooms: 3,
+  bathrooms: 2,
+  area: "JinJiangSiChuan",
+  address: "City Garden",
+  price: "2100000",
+  gallery: [
+    {
+      id: "1",
+      image:
+        "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpA.img",
+    },
+    {
+      id: "2",
+      image:
+        "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpA.img",
+    },
+    {
+      id: "3",
+      image:
+        "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpA.img",
+    },
+  ],
+  description:
+    "This house has been built on 2019 ,the seccondary home,3 bedrooms ,and 2 bathrooms,in JinJIang City Garden",
+  agent: {
+    name: "Wangda",
+    email: "laoskee@123.com",
+    avatar:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+  },
+  facilities: [
+    {
+      title: "Sna",
+      icon: "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    },
+  ],
+};
+
 export const fakeproperties = [
   {
     image:
@@ -43,7 +89,7 @@ export const fakeproperties = [
     rating: 2.99,
     name: "Ahamade",
     address: "No22.Ahakeshi.Ukland",
-    price: 998852,
+    price: 99882,
     id: "1",
   },
   {
