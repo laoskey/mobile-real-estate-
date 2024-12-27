@@ -39,8 +39,7 @@ export const cards = [
 export const fakeProperty = {
   name: "ForestHome",
   image:
-    "https://www.bing.com/th/id/OIP.coDKm0m4Jpm_hF6V0xhGaQHaF7?w=215&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
-
+    "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpA.img",
   type: "APT",
   rating: 5.1,
   reviews: [{ name: "aha" }],
