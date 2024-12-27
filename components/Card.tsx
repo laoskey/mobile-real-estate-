@@ -21,8 +21,10 @@ export const FeaturedCard = ({ item, onPress }: Props) => {
       className="flex flex-col items-start w-60 h-80 relative"
     >
       <Image
-        source={{ uri: item.image }}
+        // source={{ uri: item.image }}
+        source={images.avatar2}
         className="size-full rounded-2xl"
+        // resizeMode="contain"
       />
 
       <Image

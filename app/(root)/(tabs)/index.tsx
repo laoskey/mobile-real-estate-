@@ -3,7 +3,11 @@ import FeaturedCard from "@/components/FeaturedCard";
 import Filters from "@/components/Filters";
 import NoResults from "@/components/NoResults";
 import Search from "@/components/Search";
-import { fakeproperties, fakeUser } from "@/constants/data";
+import {
+  fakeLastProperties,
+  fakeproperties,
+  fakeUser,
+} from "@/constants/data";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
 import { Link } from "expo-router";
@@ -18,9 +22,13 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
-  const loading = false;
+  // TODO:waiting for backend integration
   const user = fakeUser;
   const properties = fakeproperties;
+  const latestProperties = fakeLastProperties;
+
+  const loading = false;
+  const latestPropertiesLoading = false;
   const handleCardPress = ({ id }: { id: string }) => {};
 
   return (
@@ -104,10 +112,10 @@ export default function Index() {
                   renderItem={({ item }) => (
                     <FeaturedCard
                       item={item}
-                      onPress={() => handleCardPress(item.$id)}
+                      onPress={() => handleCardPress({ id: item.id })}
                     />
                   )}
-                  keyExtractor={(item) => item.$id}
+                  keyExtractor={(item) => item.id}
                   horizontal
                   showsHorizontalScrollIndicator={false}
                   contentContainerClassName="flex gap-5 mt-5"

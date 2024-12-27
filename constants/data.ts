@@ -38,12 +38,105 @@ export const cards = [
 
 export const fakeproperties = [
   {
-    image: "D:/Code/react-native/wander/assets/images/avatar.png",
+    image:
+      "https://www.bing.com/th/id/OIP.coDKm0m4Jpm_hF6V0xhGaQHaF7?w=215&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 2.99,
     name: "Ahamade",
     address: "No22.Ahakeshi.Ukland",
     price: 998852,
     id: "1",
+  },
+  {
+    image:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    rating: 4.99,
+    name: "LocustAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 9952,
+    id: "2",
+  },
+  {
+    image:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    rating: 4.99,
+    name: "LocustAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 9952,
+    id: "3",
+  },
+  {
+    image:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    rating: 4.99,
+    name: "LocustAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 9952,
+    id: "4",
+  },
+  {
+    image:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    rating: 4.99,
+    name: "LocustAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 9952,
+    id: "5",
+  },
+  {
+    image:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    rating: 4.99,
+    name: "LocustAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 9952,
+    id: "6",
+  },
+  {
+    image:
+      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+    rating: 4.99,
+    name: "LocustAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 9952,
+    id: "7",
+  },
+];
+export const fakeLastProperties = [
+  {
+    image:
+      "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpA.img",
+    rating: 2.99,
+    name: "LastAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 998852,
+    id: "1",
+  },
+  {
+    image:
+      "https://owaohzxfnovawbdkaobd.supabase.co/storage/v1/object/public/cabin-images/0.14590366398775267-cabin-001.jpg",
+    rating: 2.99,
+    name: "LastAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 998852,
+    id: "2",
+  },
+  {
+    image:
+      "https://owaohzxfnovawbdkaobd.supabase.co/storage/v1/object/public/cabin-images/0.3233334773127077-cabin-006.jpg",
+    rating: 2.99,
+    name: "LastAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 998852,
+    id: "3",
+  },
+  {
+    image:
+      "https://owaohzxfnovawbdkaobd.supabase.co/storage/v1/object/public/cabin-images/0.47853521344088246-cabin-008.jpg",
+    rating: 2.99,
+    name: "LastAhamade",
+    address: "No22.Ahakeshi.Ukland",
+    price: 998852,
+    id: "4",
   },
 ];
 
