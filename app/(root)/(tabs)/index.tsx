@@ -1,4 +1,8 @@
 import { Card } from "@/components/Card";
+import FeaturedCard from "@/components/FeaturedCard";
+import Filters from "@/components/Filters";
+import NoResults from "@/components/NoResults";
+import Search from "@/components/Search";
 import { fakeproperties, fakeUser } from "@/constants/data";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
