@@ -93,12 +93,20 @@ export const fakeProperty = {
     name: "Wangda",
     email: "laoskee@123.com",
     avatar:
-      "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+      "https://ts2.cn.mm.bing.net/th?id=ORMS.7609425307507ef271d551a94b999612&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=2&p=0",
   },
   facilities: [
     {
       title: "Sna",
-      icon: "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
+      icon: "https://img-s.msn.cn/tenant/amp/entityid/AA1vXUG4?w=300&h=157&q=60&m=6&f=jpg&u=t",
+    },
+    {
+      title: "Junior",
+      icon: "https://ts2.cn.mm.bing.net/th?id=ORMS.9d63758dd7ced117d6c3021aec946b19&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=2&p=0",
+    },
+    {
+      title: "Major",
+      icon: "https://ts2.cn.mm.bing.net/th?id=ORMS.11453159a76dd3963b3666c133299ee2&pid=Wdp&w=268&h=140&qlt=90&c=1&rs=1&dpr=2&p=0",
     },
   ],
 };
