@@ -13,6 +13,7 @@ import { router, useLocalSearchParams } from "expo-router";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
 import { fakeProperty } from "@/constants/data";
+import Comment from "@/components/Comment";
 
 function Property() {
   const { id } = useLocalSearchParams();
@@ -278,9 +279,14 @@ function Property() {
                 </TouchableOpacity>
               </View>
 
-              <View className="mt-5">
-                {/* <Comment item={property?.reviews[0]} /> */}
-                <Text>Comment component</Text>
+              <View className="mt-5 flex flex-col gap-3">
+                {property.reviews.map((item) => (
+                  <Comment
+                    item={item}
+                    key={item.avatar}
+                    className="  border-b pb-2 border-slate-100"
+                  />
+                ))}
               </View>
             </View>
           )}

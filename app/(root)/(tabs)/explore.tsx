@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   Image,
 } from "react-native";
-import Reacct from "react";
+import Reacct, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Card } from "@/components/Card";
 import NoResults from "@/components/NoResults";
@@ -15,9 +15,20 @@ import icons from "@/constants/icons";
 import Search from "@/components/Search";
 import Filters from "@/components/Filters";
 import { fakeproperties } from "@/constants/data";
+import Property from "../properties/[id]";
 
-interface Explore {}
+interface Property {
+  image: string;
+  rating: number;
+  name: string;
+  address: string;
+  price: number;
+  id: string;
+}
 function Explore() {
+  const [showProperties, setShowProperties] = useState<Property[]>(
+    []
+  );
   const loading = false;
 
   const properties = fakeproperties;
@@ -27,16 +38,48 @@ function Explore() {
   // TODO:waiting for backend integration
   // TODO:IMplement the filter and serach func
 
-  let showProperties = [];
   const params = useLocalSearchParams<{
     query?: string;
     filter?: string;
   }>();
 
+  const type = params.filter || "All";
+
+  useEffect(() => {
+    switch (type) {
+      case "All":
+        setShowProperties(
+          properties.slice().sort((a, b) => a.price - b.price)
+        );
+        break;
+      // TODO:Impl the other ccase
+      case "House":
+        break;
+      case "Candos":
+        break;
+      case "Duplexes":
+        break;
+      case "Studios":
+        break;
+      case "Villas":
+        break;
+      case "Apartments":
+        break;
+      case "Townhomes":
+        break;
+      case "Others":
+        break;
+
+      default:
+        setShowProperties(properties);
+        break;
+    }
+  }, [params.filter]);
+
   return (
     <SafeAreaView className="h-full bg-white">
       <FlatList
-        data={properties}
+        data={showProperties}
         numColumns={2}
         renderItem={({ item }) => (
           <Card

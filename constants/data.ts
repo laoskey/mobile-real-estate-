@@ -42,7 +42,29 @@ export const fakeProperty = {
     "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msMpA.img",
   type: "APT",
   rating: 5.1,
-  reviews: [{ name: "aha" }],
+  reviews: [
+    {
+      avatar:
+        "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msIHD.img",
+      name: "BoBstring",
+      review: "This  is a  terrible house",
+      createdAt: "09092011",
+    },
+    {
+      avatar:
+        "https://ts2.cn.mm.bing.net/th?id=ORMS.f6240790ce258f3f584834627947b43a&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1&dpr=2&p=0g",
+      name: "String",
+      review: "This  is a  fantanstic house",
+      createdAt: "09092019",
+    },
+    {
+      avatar:
+        "https://ts2.cn.mm.bing.net/th?id=ORMS.c925cac56c3b4aa836a869dc43db7d16&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1&dpr=2&p=0",
+      name: "Normal",
+      review: "This  is a  normal house",
+      createdAt: "09092021",
+    },
+  ],
   bedrooms: 3,
   bathrooms: 2,
   area: "JinJiangSiChuan",
@@ -88,7 +110,7 @@ export const fakeproperties = [
     rating: 2.99,
     name: "Ahamade",
     address: "No22.Ahakeshi.Ukland",
-    price: 99882,
+    price: 92,
     id: "1",
   },
   {
@@ -96,8 +118,8 @@ export const fakeproperties = [
       "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 4.99,
     name: "LocustAhamade",
-    address: "No22.Ahakeshi.Ukland",
-    price: 9952,
+    address: "No21.Ahakeshi.Ukland",
+    price: 2,
     id: "2",
   },
   {
@@ -105,8 +127,8 @@ export const fakeproperties = [
       "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 4.99,
     name: "LocustAhamade",
-    address: "No22.Ahakeshi.Ukland",
-    price: 9952,
+    address: "No23.Ahakeshi.Ukland",
+    price: 9952222,
     id: "3",
   },
   {
@@ -114,8 +136,8 @@ export const fakeproperties = [
       "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 4.99,
     name: "LocustAhamade",
-    address: "No22.Ahakeshi.Ukland",
-    price: 9952,
+    address: "No24.Ahakeshi.Ukland",
+    price: 99521,
     id: "4",
   },
   {
@@ -123,8 +145,8 @@ export const fakeproperties = [
       "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 4.99,
     name: "LocustAhamade",
-    address: "No22.Ahakeshi.Ukland",
-    price: 9952,
+    address: "No25.Ahakeshi.Ukland",
+    price: 9943432,
     id: "5",
   },
   {
@@ -132,8 +154,8 @@ export const fakeproperties = [
       "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 4.99,
     name: "LocustAhamade",
-    address: "No22.Ahakeshi.Ukland",
-    price: 9952,
+    address: "No26.Ahakeshi.Ukland",
+    price: 956464652,
     id: "6",
   },
   {
@@ -141,8 +163,8 @@ export const fakeproperties = [
       "https://www.bing.com/th/id/OIP.WSsCa75YhSn91wK4_dc40wAAAA?w=250&h=180&c=7&r=0&o=5&dpr=2&pid=1.7",
     rating: 4.99,
     name: "LocustAhamade",
-    address: "No22.Ahakeshi.Ukland",
-    price: 9952,
+    address: "No2.Ahakeshi.Ukland",
+    price: 19952,
     id: "7",
   },
 ];
